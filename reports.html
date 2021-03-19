@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body
+		{
+			background: url(standerd.jpg);
+		}
+		
+		.nav{
+			width: 100%;
+			background:#000033;
+			height: 300px;
+		}
+
+     ul
+		{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			margin-top: 8%;
+		}
+        
+        ul li
+         {
+            float:none;
+            margin-top: 15px;
+         }
+
+         ul li a{
+         	width: 150px;
+         	color: white;
+         	display: block;
+         	text-decoration: none;
+         	font-size: 20px;
+         	text-align: center;
+         	padding: 10;
+         	border-radius: 10px;
+         	font-family: century gothic;
+         	font-weight: bold;
+         }
+         
+         a:hover{
+         	background:#669900;
+         	transition: 2s;
+            transform: scale(.7);
+         }
+         ul li ul {
+         	background: #000033;
+         }
+         ul li ul li {
+         	float: none;
+         }
+         ul li ul {
+         	display:none;
+         }
+
+         ul li:hover ul {
+         	display: block;
+         	margin-left: 15%;
+         }
+        #class{
+        background: url(white2.jpg);
+        position: absolute;
+        width:80%;
+        height: 933px;
+        margin-left: 20%;
+        margin-top: -5%
+      }
+
+         .box 
+      {
+         position: absolute;
+         top: 10%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+         width: 1000px;
+         height: 150px;
+      }
+      .box .face 
+      {
+         position: absolute;
+         width: 500px;
+         height: 70px;
+         font-size: 4em;
+         text-align: center;
+         line-height: 50px;
+         overflow: hidden;
+         margin-top: 5%;
+      }
+      .box .face span
+      {
+         width:100%;
+         height: 100%;
+         display: block;
+         transition: .5s;
+      }
+
+      .box .face.face1
+      {
+         background: #d80045;
+         color: #fff;
+         transform-origin: left;
+         left: 0;
+         transform: perspective(800px) rotateY(-64.0deg);
+      }
+           
+           .box .face.face2
+      {
+         background: #f1004d;
+         color: #fff;
+         transform-origin: right;
+         right: 0;
+         transform: perspective(800px) rotateY(64.0deg);
+      }
+      .box .face.face1 span
+      {
+         position: absolute;
+         animation: animate1 7s linear infinite;
+      }
+
+         @keyframes animate1
+         {
+            0%
+            {
+               left:200%;
+            }
+            100%
+            {
+               left: -100%;
+            }
+         }
+
+         .box .face.face2 span
+      {
+         position: absolute;
+         animation: animate2 7s linear infinite;
+      }
+
+         @keyframes animate2
+         {
+            0%
+            {
+               left: 100%;
+            }
+            100%
+            {
+               left: -200%;
+            }
+         } 
+      }
+</style>
+</head>
+<body>
+
+  <img src="IMG_20190215_160914.jpg" style="width:100px;height: 100px;margin-top: 2%;margin-left: 20px;border-radius: 50px"><br><br>
+  <a href="chose.html"><img src="admin3.png" style="width: 35px;position:absolute;margin-left: 95%;margin-top: -11%;border-radius: 40px"><u style="color:white;position: absolute;margin-top: -8%;margin-left:95%;">User</a></u>
+  <a href="open.html"><img src="loading.gif" style="position:absolute;width: 80px;margin-top: -12%;margin-left: 86%"><u style="color:orange;position: absolute;margin-top: -8%;margin-left:87%;">Logout</a></u>
+  <b style="margin-left:10px;color: cyan;">Saurav chhetri</b><br><br><u style="margin-left: 20px;color:orange;">Analyser<br><br>
+<div class="bar">
+    <ul>
+        <li><a href="1st page.html">Home</a></li><br><br><br>   
+        <li><a href="#">User</a>
+            <ul>
+                 <li><a href="active user.html">Active User</li>
+                 <li><a href="not active.html">Not Active User</li>         
+
+            </ul></li><br><br><br>  <br><br><br>    
+        <li><a href="news.html">News</a></li><br><br><br>   
+        <li><a href="Project.html">Projects</a></li><br><br><br>    
+        <li><a href="Reports.html">Reports</a>
+         <ul>
+             <li><a href="#">Finished Report</a></li>
+             <li><a href="#">Not finished Project</a></li>
+             <li><a href="#">Uesr project</a></li>
+             <li><a href="#">Project by status</a></li>
+             <li><a href="#">User task</a></li>
+             <li><a href="#">Task by status</a></li>
+
+         </ul>
+        </li>
+               
+    </ul>
+    <div id="class">
+      <div class="box">
+     <div class="face face1"><span>Clear Reports</span></div>
+     <div class="face face2"><span>Clear Reports</span></div><br><br><br>
+     </div></body></html>

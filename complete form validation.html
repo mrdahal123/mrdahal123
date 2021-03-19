@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>complete form valedation</title>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body>
+	<form action="#" name="myForm" onsubmit="return(validate());">
+		<table cellpadding="2" border="1">
+					<tr>
+				
+						<td align="right">Name</td>
+						<td><input type="text" name="Name" /></td>
+					
+					</tr>
+
+					<tr>	
+
+						<td align="right">EMail</td>
+						<td><input type="EMail" name="EMail" /></td>
+                     
+                     </tr>
+
+                     <tr>
+
+                     	<td align="right">Zip Code</td>
+                     	<td><input type="text" name="Zip" /></td>
+                     
+                     </tr>
+
+                     <tr>
+                     	   	
+                     	   	<td align="right">Country</td>
+                     	   	<td>
+                     	   		<select name="Country">
+                     	   			<option value="-1" selected>[chose yours]</option>
+                     	   			<option value="1">India</option>
+                     	   			<option value="2">Pakishtan</option>
+                     	   			<option value="3">Nepal</option>                  	   			
+                     	   	
+                     	   		</select>
+                     	   	</td>
+                     </tr>
+
+                     <tr>
+                     	<td align="right"></td>
+                     	<td><input type="submit" value="submit" /></td>
+                     </tr>
+		</table>
+		
+	</form>
+  <script type="text/javascript">
+  	function validate()
+  	{
+
+  			if (document.myForm.Name.value== "" ){
+  				alert("plese provide your name!");
+  				document.myForm.Name.focus();
+  				return false;
+  			}
+  			if(document.myForm.EMail.value== "" ){
+  				alert("plese provide your email");
+  				document.myForm.EMail.focus();
+  				return false;
+  			}
+  			if(document.myForm.Zip.value== "" || isNaN(document.myForm.Zip.value)||document.myForm.Zip.value.length !=5){
+  				alert("plese provide your zip code in formet of #####,");
+  				document.myForm.ZipCode.focus();
+  				return false;
+  			}
+  			if(document.myForm.Country.value=="-1"){
+  				alert("plese provide your Country!");
+  				return false;
+  			}
+  			return(true);
+  		}
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <style>
+    body{
+    	margin:0;
+    	padding: 0;
+    	background:url(pro.jpg);
+    	background-size: cover;
+    	background-position: center;
+    	font-family: sans-serif;
+    }
+    .login-box{
+    	width: 320px;
+    	height: 370px;
+    	background:rgba(0, 0, 0, 0.5);
+    	color: #fff;
+    	top: 50%;
+    	left: 50%;
+    	position: absolute;
+    	transform: translate(-50%,-50%);
+    	box-sizing: border-box;
+    	padding: 70px 30px0;
+    	-webkit-border-radius:70px 0 70px 0;
+    	-moz-border-radius:70px 0 70px 0;
+    	border-radius: 70px 0 70px 0; 
+    }
+    .login{
+    	width: 100px;
+    	height: 100px;
+    	border-radius: 50%;
+    	position: absolute;
+    	top:-50px;
+    	left: calc(50% - 50px);
+    }
+    h1{
+    	margin: 0;
+    	padding: 0 0 20px;
+    	text-align: center;
+    	font-size: 22px;
+    	margin-top: 50px;
+    }
+    h1:hover {
+        transition: 5s;
+        transform: scale(2);
+    }
+    .login-box p{
+  	    margin-left:30px;
+    	padding: 0;
+    	font-weight: bold;
+    }
+     .login-box input{
+     	width: 80%;
+     	margin-bottom:5px;
+     	margin-left: 30px;
+     }
+    .login-box input[type="text"],input[type="password"]
+    {
+    	border: none;
+    	border-bottom:1px solid #ffff;
+    	background:transparent;
+    	outline:none;
+    	height: 40px;
+    	color: #fff;
+    	font-size: 16px;
+    	margin-left: 30px;
+    }
+    </style>
+
+</head>
+<body>
+	<div class="login-box">
+		<img src="login.png" class="login">
+		<h1>login Here</h1>
+		<form>
+			<p>UserName</p>
+			<input type="text" name="UserName" placeholder="Enter UserName">
+			<p>password</p>
+			<input type="password" name="password" placeholder="Enter password">
+			<a href="user.html"><fieldset style="width: 70%; height:10px;background-color: white;text-align: center;margin-left: 30px;-webkit-border-radius:70px 0 70px 0;
+    	-moz-border-radius:70px 0 70px 0;
+    	border-radius: 70px 0 70px 0;">login</fieldset></a><br>
+			<a href="web application.html"><b style="margin-left: 22px;color:white;font-size: 12px">create new account</a>
+            <a href="pass.html"><b style="color: white">Forgot password</a>
+		</form>
+
+	</div>
+
+</body>
+</html>

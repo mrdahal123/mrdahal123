@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body
+		{
+			background: url(standerd.jpg);
+		}
+		
+		.nav{
+			width: 100%;
+			background:#000033;
+			height: 80px;
+		}
+
+     ul
+		{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+			margin-top: 8%;
+		}
+        
+        ul li
+         {
+            float:none;
+            margin-top: 15px;
+         }
+
+         ul li a{
+         	width: 150px;
+         	color: white;
+         	display: block;
+         	text-decoration: none;
+         	font-size: 20px;
+         	text-align: center;
+         	padding: 10;
+         	border-radius: 10px;
+         	font-family: century gothic;
+         	font-weight: bold;
+         }
+         
+         a:hover{
+         	background:#669900;
+         	transition: 2s;
+            transform: scale(.7);
+         }
+         ul li ul {
+         	background: #000033;
+         }
+         ul li ul li {
+         	float: none;
+         }
+         ul li ul {
+         	display:none;
+         }
+
+         ul li:hover ul {
+         	display: block;
+         	margin-left: 15%;
+         }
+        #class{
+        background: url(white4.jpg);
+        position: absolute;
+        width:80%;
+        height: 933px;
+        margin-left: 20%;
+        margin-top: -5%
+      }
+
+      table
+      {
+        margin-top: 7%;
+        color: #000;
+        background-color: snow;
+        text-align: center;
+      }
+      table:hover {
+      	transition: 3s;
+      	transform: scale(2);
+      }
+      tr:hover
+      {
+        background-color: cyan;
+        transition: 2s;
+            transform: rotate3d(10deg);
+      }
+       td:hover
+      {
+        background-color:#ff0057;
+        opacity:.8;
+        transition: .9s;
+        transform: skew(30deg);
+      }
+      #table2{
+       margin-left:0%;
+       margin-top:6%;
+      }
+      .h2{
+        margin:0;
+        padding: 0;
+        justify-content: center;
+        height: 10vh;
+      	display: flex;
+      	background: #000;
+      	font-family: Harrington,cursive;
+      }
+      h2{
+      	margin:0;
+      	padding: 0;
+      	color: #111;
+      	font-size: 3em;
+      }
+      h2 span 
+      {
+           display: table-cell;
+           margin:0;
+           padding: 0;
+           animation: animate 2s linear infinite;
+      } 
+        h2 span:nth-child(1)
+        {
+        	animation-delay: 0s;
+        }
+        h2 span:nth-child(2)
+        {
+        	animation-delay: 0.25s;
+        }
+        h2 span:nth-child(3)
+        {
+             animation-delay: 0.5s;
+        }
+        h2 span:nth-child(4)
+        {
+             animation-delay: 0.75s;
+        }
+        h2 span:nth-child(5)
+        {
+              animation-delay: 1s;
+        }
+        h2 span:nth-child(6)
+        {
+             animation-delay: 1.25s;
+        }
+        h2 span:nth-child(7)
+        {
+             animation-delay: 1.5s;
+        }
+        h2 span:nth-child(8)
+        {
+            animation-delay: 11.75s;
+        }
+
+      @keyframes animate
+      {
+      	0%,100%
+      	{
+      		color: #00b3ff;
+      		filter: blur(1px);
+      		text-shadow: 0 0 10px  #00b3ff
+      		            0 0 20px #00b3ff,
+      		            0 0 40px #00b3ff,
+      		            0 0 80px #00b3ff,
+      		            0 0 120px #00b3ff,
+      		            0 0 200px #00b3ff,
+      		            0 0 300px #00b3ff,
+      		            0 0 400px #00b3ff,
+      	}
+      	5%,95%
+      	{
+      		color: #111;
+      		filter: blur(1px);
+      		text-shadow:none;
+      	}
+      }
+
+	</style>
+</head>
+<body>
+
+  <img src="IMG_20190215_160914.jpg" style="width:100px;height: 100px;margin-top: 2%;margin-left: 20px;border-radius: 50px"><br><br>
+  <a href="open.html"><img src="admin3.png" style="width: 35px;position:absolute;margin-left: 95%;margin-top: -11%;border-radius: 40px"><u style="color:white;position: absolute;margin-top: -8%;margin-left:95%;">User</a></u>
+  <a href="open.html"><img src="loading.gif" style="position:absolute;width: 80px;margin-top: -12%;margin-left: 86%"><u style="color:orange;position: absolute;margin-top: -8%;margin-left:87%;">Logout</a></u>
+  <b style="margin-left:10px;color: cyan;">Saurav chhetri</b><br><br><u style="margin-left: 20px;color:orange;">Analyser<br><br>
+<div class="bar">
+	<ul>
+		<li><a href="1st page.html">Home</a></li><br><br><br>	
+		<li><a href="#">User</a>
+			<ul>
+                 <li><a href="active user.html">Active User</li>
+                 <li><a href="not active.html">Not Active User</li>			
+
+			</ul></li><br><br><br>	<br><br><br>	
+		<li><a href="news.html">News</a></li><br><br><br>	
+		<li><a href="Project.html">Projects</a></li><br><br><br>	
+		<li><a href="Reports.html">Reports</a>
+         <ul>
+         	 <li><a href="#">Finished Report</a></li>
+         	 <li><a href="#">Not finished Project</a></li>
+         	 <li><a href="#">Uesr project</a></li>
+         	 <li><a href="#">Project by status</a></li>
+         	 <li><a href="#">User task</a></li>
+         	 <li><a href="#">Task by status</a></li>
+
+         </ul>
+		</li>
+               
+	</ul>
+</div>
+<div id="class">
+	<div class="h2">
+		<h2>
+		<span>h</span>
+		<span>o</span>
+	    <span>m</span>
+        <span>e</span>
+        <span>p</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+</h2></div>
+    <b style="position: absolute;margin-left: 10px;font-size: 30px;color:#000;margin-top: 1%">To do task</a></b>
+    <b style="position: absolute;margin-top: 1%;font-size: 30px;color: #000;margin-left: 60%;">In progress task</b>
+
+  <div id="table2"><table border="1" style="height: 10px;" >
+    	<tr>
+           <td colspan="3">project name</td>
+           <td colspan="3">task name</td>
+           <td colspan="3">duration</td>
+           <td colspan="3">start_date</td>
+           <td colspan="3">End_date</td>
+           <td colspan="3">status</td>
+       </tr>
+
+       <tr>
+        <tr>
+        </tr>
+       </tr>
+       <tr>
+        </tr>
+       </tr>
+       <tr>
+        <td colspan="3">hospital web app</td>
+        <td colspan="3">build data base</td>
+        <td colspan="3">10</td>
+        <td colspan="3">2019-05-11</td>
+        <td colspan="3">2019-06-02</td>
+        <td colspan="3">To do</td>
+       </tr>
+          
+           <tr>
+        <tr>
+        </tr>
+       </tr>
+       <tr>
+        <tr>
+        </tr>
+       </tr>
+       <tr>
+        <td colspan="3" height="10px">online exam web</td>
+        <td colspan="3">build data base</td>
+        <td colspan="3">10</td>
+        <td colspan="3">2019-03-10</td>
+        <td colspan="3">2019-04-10</td>
+        <td colspan="3">To do</td>
+       </tr>
+       
+       </table>
+       <div id="table2" style="margin-left:50%;margin-top:-11.9%;">
+        <table border="1" style="height: 10px;">
+        <tr>
+       <td colspan="3">project name</td>
+       <td colspan="3">task name</td>
+       <td colspan="3">duration</td>
+       <td colspan="3">start_date</td>
+       <td colspan="3">End_date</td>
+       <td colspan="3">status</td>
+       </tr>
+       <tr>
+        <tr>
+        </tr>
+       </tr>
+       <tr>
+        <tr>
+        </tr>
+       </tr>
+       <tr>
+        <td colspan="3">liblary web app</td>
+        <td colspan="3">build data base</td>
+        <td colspan="3">10</td>
+        <td colspan="3">2019-03-11</td>
+        <td colspan="3">2019-04-02</td>
+        <td colspan="3">in progress</td>
+       </tr>
+       <tr>
+        <tr>
+        </tr>
+       </tr>
+       <tr>
+        <tr>
+        </tr>
+       </tr>
+       <tr>
+        <td colspan="3">online exam web</td>
+        <td colspan="3">build data base</td>
+        <td colspan="3">10</td>
+        <td colspan="3">2019-03-10</td>
+        <td colspan="3">2019-04-10</td>
+        <td colspan="3">in progress</td>
+       </tr>
+   
+  </table></div></div>
+</body>
+</html>
